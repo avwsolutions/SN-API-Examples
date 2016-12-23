@@ -1,6 +1,6 @@
 # Create ServiceNow APIs in 10 minutes 
 
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/header.png" alt="api header">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/header.png" alt="api header">
 
 ELK (Elasticsearch-Logstash-Kibana) and Graphite/Grafana are the most popular tools for analyzing your logs and metrics. Almost every company has one of these tools running, with various use cases like big data, analytics or just monitoring.
 In this hands-on workshop the student learns the fundamental skills needed to understand the concepts en start creating their Monitoring configuration. 
@@ -33,20 +33,20 @@ srapi-add.png
 srapi-new.png
 
 
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part4.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part1.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part2.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incidentc-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incidentc-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incidentc-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part4.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part1.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part2.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part3.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/change-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/change-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/change-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/content/incident-part4.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part1.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part2.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part3.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
 
 -	BankIT, the fictive application that is submitting the monitoring data.
