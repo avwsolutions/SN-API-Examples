@@ -1,0 +1,7 @@
+{
+    "GroupName": "Service Desk",
+    "ShortDescription": "SAP Materials Management is slow or there is an outage",
+    "Priority": "1 - Critical",
+    "State": "On Hold",
+    "CMDB_CI": "SAP Materials Management"
+}
