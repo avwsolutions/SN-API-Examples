@@ -14,6 +14,8 @@ To eliminate this waste automation is our first goal, but to automate these proc
 
 ITOM helps companies to have better configuration control on their dynamic behaviour of their technology stacks. New compute resources can provisioned easily from standard changes or defunct states can be easily recovered with *book automation.
 
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/itom-overview.png" alt="itom overview">
+
 At Devoteam we are experts in this IT Operations Management approach !!! Why ???
 
 -	Devoteam has a long background in Business Service Monitoring, connecting business and IT.
