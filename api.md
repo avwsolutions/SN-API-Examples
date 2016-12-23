@@ -1,6 +1,25 @@
-# Create ServiceNow APIs in 10 minutes 
+# Create ServiceNow API in 10 minutes 
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/header.png" alt="api header">
+
+## Introduction ServiceNow
+ServiceNow is currently the Enterprise platform for managing your IT Value Chains and their corresponding services their lifecycle.Nowadays with surviving the Digital Era and the rise of DevOps/Continuous Delivery most classic ITSM implementations lack an automated approach. Many say this is caused by processes, but the truth lies somewhere in the middle. Frameworks like ITIL aren't that bad, but many times their implementation sucks. As we learned from DevOps/CLAMS we know that Lean Value Stream Mapping (VSM) can help us to identify waste (muda) in the value chain.
+For bad implemenations this means:
+-	No good balance the type of changes (standard vs normal), which causes overhead and enormous delays.
+-	Too much repeatable inquiries asking the same information, which increase administration.
+-	Too many wait time by approval/advisory boards, like CAB or other.
+-       Too many handovers.
+
+To eliminate this waste automation is our first goal, but to automate these processes into automated workflows the classic ITSM approach needs an operational extension for measuring your IT ecosystem configuration,health and performance states to feed your ITSM capabilities. This approach is called IT Operations Management (ITOM), which helps to create value chain visibility,prevent service outages by earlier detection and maximizing operational agility. 
+
+ITOM helps companies to have better configuration control on their dynamic behaviour of their technology stacks. New compute resources can provisioned easily from standard changes or defunct states can be easily recovered with *book automation.
+
+At Devoteam we are experts in this IT Operations Management approach !!! Why ???
+
+-	Devoteam has a long background in Business Service Monitoring, connecting business and IT.
+-	Devoteam has very strong data lake consultants on IT Operational Analytics (ITOA) and more traditional event handlers like IBM Netcool or HP Operations Manager.
+-	Devoteam are software engineers, we think outside-the-box delivering a DevOps approach instead of creating vendor-locking. 
+-	Devoteam can also help with the technology automation topics like discovery, orchestration and cloud management. 
 
 ELK (Elasticsearch-Logstash-Kibana) and Graphite/Grafana are the most popular tools for analyzing your logs and metrics. Almost every company has one of these tools running, with various use cases like big data, analytics or just monitoring.
 In this hands-on workshop the student learns the fundamental skills needed to understand the concepts en start creating their Monitoring configuration. 
