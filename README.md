@@ -30,7 +30,7 @@ This tutorial contains examples which can help setting up various type of API or
 
 ## Pre-tutorial preparation
 Before starting this tutorial you need the following software installed or available.
--	ServiceNow development instance, preferable Helsinki or Istanbul release.
+-	ServiceNow development instance, preferable [Helsinki](https://docs.servicenow.com/category/helsinki) or [Istanbul](https://docs.servicenow.com/category/istanbul) release.
 -	Account with a preferable the *admin* role assigned.
 -	Locally installed [cURL](https://curl.haxx.se/docs/manpage.html) CLI to test the API interfaces. GUI option is using Chrome plugin like [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 -	Locally available tool called [SOAPui](https://www.soapui.org/downloads/soapui.html) for simple testing of Web Services.Preferable APIs can also tested with SOAPui.
