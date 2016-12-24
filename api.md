@@ -48,7 +48,13 @@ Now we are ready for writing some actual code. Current example code is :
 Use the example code provided in this repository [requestincident](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI).
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
+
+After you saved your awesome code you enter the last configuration step around security. My advice to always setup minimal authentication extended with authorisation provided by global defined applicable ACL policies.
+
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
+
+In this example we only enable *Require Authentication*.
+
 
 In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management.
 change-part1.png
