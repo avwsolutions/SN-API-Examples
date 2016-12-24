@@ -37,6 +37,14 @@ As *relative path* we will choose the resource name followed by the actual speci
 :warning: Please be aware of these REST API principles. 
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part2.png" alt="screenshot">
+
+Now we are ready for writing some actual code. Current example code is :
+
+-	Receiving the incident_number from url path.
+-	Logging the requested incident_number & action to the system logs.
+-	Querying the specific incident_number data.
+-	Save the specific results in a JSON formatted body and writes it back as output.
+
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
