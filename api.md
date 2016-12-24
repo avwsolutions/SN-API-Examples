@@ -55,6 +55,9 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
+Now you can use multiple options to test your API. One of the easiest options is using the REST API Explorer feature. See below a screenshot of this option.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot">
 
 In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management.
 change-part1.png
