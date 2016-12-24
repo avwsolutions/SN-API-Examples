@@ -49,7 +49,7 @@ Use the example code provided in this repository [requestincident](https://githu
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
 
-After you saved your awesome code you enter the last configuration step around security. My advice to always setup minimal authentication extended with authorisation provided by global defined applicable ACL policies.
+After you saved your awesome code you enter the last configuration step around security. My advice to always setup minimal authentication extended with authorization provided by global defined applicable ACL policies.
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
