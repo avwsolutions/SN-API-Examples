@@ -45,6 +45,8 @@ Now we are ready for writing some actual code. Current example code is :
 -	Querying the specific incident_number data.
 -	Save the specific results in a JSON formatted body and writes it back as output.
 
+Use the example code provided in this repository [requestincident](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI).
+
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
