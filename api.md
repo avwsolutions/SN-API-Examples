@@ -29,7 +29,12 @@ Now that we have a service created we can implement the actual resources that pr
 First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part1.png" alt="screenshot">
 
-We will first start with the API Type
+We will first start with the resource *Name* and *Version*. We will use 'incident' as name and set our *default* version to 'v1'.
+
+Now it is time to select the correct *HTTP Method*. Since we are only requesting data and not modifying, creating or deleting records we must choose the **GET** method.
+As *relative path* we will choose the resource name followed by the actual specific resource which we need the data from. in our case this will be 'incident/{incident_number}'. 
+
+:warning: Please be aware of these REST API principles. 
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part2.png" alt="screenshot">
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
