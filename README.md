@@ -34,6 +34,9 @@ Before starting this tutorial you need the following software installed or avail
 -	Account with a preferable the *admin* role assigned.
 -	Locally installed [cURL](https://curl.haxx.se/docs/manpage.html) CLI to test the API interfaces. GUI option is using Chrome plugin like [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 -	Locally available tool called [SOAPui](https://www.soapui.org/downloads/soapui.html) for simple testing of Web Services.Preferable APIs can also tested with SOAPui.
+-	Use git CLI to clone this repository easily with ...
+
+`` git clone https://github.com/avwsolutions/SN-API-Examples `` 
 
 :warning: *Most parts you need additional Automation or Monitoring software implemented, this part contains that additional preparation.*
  
