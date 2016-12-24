@@ -1,4 +1,4 @@
-# ServiceNow API Examples 
+# ServiceNow {API} and [Integrations] by $Example 
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/header.png" alt="api header">
 
@@ -24,23 +24,17 @@ At Devoteam we are experts in this IT Operations Management approach !!! Why ???
 -	Devoteam can also help with the technology automation topics like discovery, orchestration and cloud management. 
 
 ## Example material
-This Github repository contains examples which can help setting up various type of API or Web Service use cases. Since we love using RESTful APIs we will start with this type of interface. As mentioned above our use cases will mainly be describing our most preferable automation and monitoring tools like Ansible, Puppet, Elastic or DynaTrace.
+This tutorial contains examples which can help setting up various type of API or Web Service use cases. Since we love using RESTful APIs we will start with this type of interface. As mentioned above our use cases will mainly be describing our most preferable automation and monitoring tools like Ansible, Puppet, Elastic or DynaTrace.
 
-*If you have any questions don't hesitate to contact me by Github.com or just send me an e-mail (https://www.avwsolutions.nl). It is always a pleasure to help you guys with improving your IT management.*
-
-:warning: **This document prepares you for the workshop before you actually attend. If you are already at the [DevOpsDays 2016](http://www.devopsdays.org/events/2016-amsterdam/workshops/arnold-van-wijnbergen/), please go over to the [Workshop](https://github.com/avwsolutions/DOD-AMS-Workshop/blob/master/workshop.md)**
+:warning: **If you have any questions don't hesitate to contact me by Github.com or just through [social media](https://www.avwsolutions.nl). It is always a pleasure to help you guys with improving your IT management.**
 
 ## Pre-tutorial preparation
-At the workshop, you will need to bring your own computer. Before you go to the DevOpsDays 2016 workshop, there are some steps you should do some preparation to get your work environment ready. Here are the steps:
-- For PC, Mac and Linux users we need you to install the latest version of [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads).
-- If you are new to Vagrant execute the [Getting Started](https://www.vagrantup.com/docs/getting-started/) for a very simple introduction. Skip this step if you are already familiar with Vagrant.
-```
-vagrant init hashicorp/precise64
-vagrant up
-vagrant ssh
-hostname
-uname –a
-exit
-vagrant destroy
-```
-# **And now you're ready. See you at the DevOpsDays 2016!!!**
+Before starting this tutorial you need the following software installed or available.
+-	ServiceNow development instance, preferable Helsinki or Istanbul release.
+-	Account with a preferable the *admin* role assigned.
+-	Locally installed [cURL](https://curl.haxx.se/docs/manpage.html) CLI to test the API interfaces. GUI option is using Chrome plugin like [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+-	Locally available tool called [SOAPui](https://www.soapui.org/downloads/soapui.html) for simple testing of Web Services.Preferable APIs can also tested with SOAPui.
+
+:warning: *Most parts you need additional Automation or Monitoring software implemented, this part contains that additional preparation.*
+ 
+# **And now you are ready to start with the tutorial !!!**
