@@ -21,6 +21,19 @@ In our case we will create the a service with the *Name* value of **srapi**, whi
 
 :warning:** Use a short, lowercase and functional name for identifying that service and a solid foundation for grouping your later creating resources.
 
+## Create our Service Resources
+
+Now that we have a service created we can implement the actual resources that provide the functionality. Resources are mainly containing the configuration around
+
+### Incident request API
+First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part1.png" alt="screenshot">
+
+We will first start with the API Type
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part2.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
 In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management.
 change-part1.png
