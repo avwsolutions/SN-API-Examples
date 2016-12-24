@@ -7,7 +7,17 @@ An API makes it possible too only once implement the business logic at Provider 
 REST itself stands for *REpresentational State Transfer* and it is an *architectural pattern* for creating an API that uses the HTTP as its underlying communication method. REST was first described in 2000 by [Roy Thomas Fielding](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm).
  
 
-## Part 1 Creating Scripted Rest API 
+## Create your REST API placeholder
+
+In ServiceNow you wil start with creating the REST API placeholder. Simple use the Application Navigator to filter for 'scripted REST' and start clicking on the **New** button.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/srapi-new.png" alt="screenshot"> 
+
+Now it is time to fill-in the mandatory fields. Only *Name* is required.By practice the *API ID* field is automatic filled in with the *Name* value.
+
+rc="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/srapi-add.png" alt="screenshot">
+
+
 
 In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management.
 change-part1.png
