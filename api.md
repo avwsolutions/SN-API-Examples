@@ -107,8 +107,38 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
-Now we can repeat the above step for the Change request and Incident creation.
+### Incident creation API
 
+First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part1.png" alt="screenshot">
+
+We will first start with the resource *Name* and *Version*. We will use 'create-incident' as name and set our *default* version to 'v1'.
+
+Now it is time to select the correct *HTTP Method*. Since we are now posting data and creating a new record we must choose the **POST** method.
+As *relative path* we will choose only the resource name. in our case this will be 'create-incident'.
+
+:warning: Please be aware of these REST API principles.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part2.png" alt="screenshot">
+
+Now we are ready for writing some actual code. Current example code is :
+
+-       Receiving the data attributes from the JSON formatted body.
+-       Logging the requested user & action to the system logs.
+-       Create a new incident record with the provided data attributes.
+-       Save the status in a JSON formatted body and writes it back as output.
+
+Use the example code provided in this repository [createincident](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI).
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part3.png" alt="screenshot">
+
+After you saved your awesome code you enter the last configuration step around security. My advice to always setup minimal authentication extended with authorization provided by global defined applicable ACL policies.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
+
+In this example we only enable *Require Authentication*.
+
+Now we can repeat the above step for the Change request and Incident creation.
 
 Now you can use multiple options to test your API. One of the easiest options is using the REST API Explorer feature. See below a screenshot of this option.
 
