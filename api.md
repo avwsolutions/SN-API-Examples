@@ -16,9 +16,16 @@ If you want to know more about RESTful API development and the maturity model I 
 
 Creating a scripted REST API in ServiceNow is rather simple. The development consists of six small guided steps which help you to setup your own API in minutes.
 
-Let's start with the first step, which takes up to 2 minutes.
+Let's start it only takes up to 10 minutes.
 
 # Hands-on Example
+
+In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management implementations, regarding:
+
+-	GET change information by changenumber.
+-	GET configuration information by CI name.
+-	GET incident informatoin by incidentnumber.
+-	POST incident from event handler or monitoring alert system.
 
 ## Create your REST API Service 
 
@@ -32,7 +39,7 @@ In our case we will create the a service with the *Name* value of **srapi**, whi
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/srapi-add.png" alt="screenshot">
 
-:warning:** Use a short, lowercase and functional name for identifying that service and a solid foundation for grouping your later creating resources.
+:warning: Use a short, lowercase and functional name for identifying that service and a solid foundation for grouping your later creating resources.
 
 ## Create our Service Resources
 
@@ -68,11 +75,49 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
+Now we can repeat the above step for the Change request and Incident creation.
+
+### Change request API
+First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part1.png" alt="screenshot">
+
+We will first start with the resource *Name* and *Version*. We will use 'change' as name and set our *default* version to 'v1'.
+
+Now it is time to select the correct *HTTP Method*. Since we are only requesting data and not modifying, creating or deleting records we must choose the **GET** method.
+As *relative path* we will choose the resource name followed by the actual specific resource which we need the data from. in our case this will be 'change/{change_number}'.
+
+:warning: Please be aware of these REST API principles.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part2.png" alt="screenshot">
+
+Now we are ready for writing some actual code. Current example code is :
+
+-       Receiving the change_number from url path.
+-       Logging the requested change_number & action to the system logs.
+-       Querying the specific change_number data.
+-       Save the specific results in a JSON formatted body and writes it back as output.
+
+Use the example code provided in this repository [requestchange](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI).
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part3.png" alt="screenshot">
+
+After you saved your awesome code you enter the last configuration step around security. My advice to always setup minimal authentication extended with authorization provided by global defined applicable ACL policies.
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
+
+In this example we only enable *Require Authentication*.
+
+Now we can repeat the above step for the Change request and Incident creation.
+
+
 Now you can use multiple options to test your API. One of the easiest options is using the REST API Explorer feature. See below a screenshot of this option.
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot">
 
-In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management.
+Other options for testing your API are using Postman/SOAPui or a simple cURl statement.
+
+Now repeat the 
+
 change-part1.png
 change-part2.png
 change-part3.png
