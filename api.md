@@ -153,7 +153,9 @@ Below the examples explained.
 
 ### Simple validation using the REST API Explorer feature
 
-Below a screenshot of the REST API Explorer, which is accessible by the following formatted URL *https://<instance>.service-now.com/$restapi.do*
+Below a screenshot of the REST API Explorer, which is accessible by the following formatted URL 
+
+*https://\<instance\>.service-now.com/$restapi.do*
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot"> 
 
