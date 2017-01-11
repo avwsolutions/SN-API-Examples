@@ -161,7 +161,14 @@ Now follow the following steps to test your incident request API.
 
 Now the request, response and body are shown. See an example output body provided in this repository [requestincident.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
 
-### testing your REST API using cURL
+### Testing your REST API using Postman
+
+One of the tools which also can be used SoapUI.
+ 
+
+
+
+### Testing your REST API using cURL
 
 If you already noticed the API explorer window they also provide example CLI snippits for most popular tools or scripting languages.
 
