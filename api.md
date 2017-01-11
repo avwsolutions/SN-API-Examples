@@ -18,6 +18,8 @@ Creating a scripted REST API in ServiceNow is rather simple. The development con
 
 Let's start with the first step, which takes up to 2 minutes.
 
+# Hands-on Example
+
 ## Create your REST API Service 
 
 In ServiceNow you wil start with creating the REST API Service. Simple use the Application Navigator to filter for 'scripted REST' and start clicking on the **New** button.
