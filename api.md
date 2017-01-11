@@ -138,13 +138,6 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
-Now we can repeat the above step for the Change request and Incident creation.
-
-Now you can use multiple options to test your API. One of the easiest options is using the REST API Explorer feature. See below a screenshot of this option.
-
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot">
-
-
 ## Test your API
 
 Testing your API can be done using various methods. Simple validation can be done using the REST API Explorer feature. More automated testing can be done using SOAPUI or cURL started from your Jenkins pipeline.
@@ -159,7 +152,7 @@ Below a screenshot of the REST API Explorer, which is accessible by the followin
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot"> 
 
-Now follow the following steps to test your change request API.
+Now follow the following steps to test your incident request API.
 
 1. Select your namespace (i.e. 78973) which corresponds to your just created REST API.
 2. Select you API name which corresponds to our just created service called 'srapi'.
@@ -168,21 +161,19 @@ Now follow the following steps to test your change request API.
 
 Now the request, response and body are shown. See an example output body provided in this repository [requestincident.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
 
+### testing your REST API using cURL
 
-Other options for testing your API are using Postman/SOAPui or a simple cURl statement.
+If you already noticed the API explorer window they also provide example CLI snippits for most popular tools or scripting languages.
 
+In this cURL example we will test the incident request API by following the steps below.
 
-## Pre-tutorial preparation
-At the workshop, you will need to bring your own computer. Before you go to the DevOpsDays 2016 workshop, there are some steps you should do some preparation to get your work environment ready. Here are the steps:
-- For PC, Mac and Linux users we need you to install the latest version of [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads).
-- If you are new to Vagrant execute the [Getting Started](https://www.vagrantup.com/docs/getting-started/) for a very simple introduction. Skip this step if you are already familiar with Vagrant.
+Open an CLI and run the following statement.
+
 ```
-vagrant init hashicorp/precise64
-vagrant up
-vagrant ssh
-hostname
-uname –a
-exit
-vagrant destroy
+curl "https://instance.service-now.com/api/78973/srapi/change/CHG0030002" \
+--request GET \
+--header "Accept:application/json" \
+--user 'username':'password'
 ```
-# **And now you're ready. See you at the DevOpsDays 2016!!!**
+
+Now the body is shown in JSON format. See an example output body provided in this repository [requestchange.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
