@@ -8,7 +8,15 @@ REST itself stands for *REpresentational State Transfer* and it is an *architect
 
 I really like the [Richardson Maturity Model](http://restcookbook.com/Miscellaneous/richardsonmaturitymodel/) for grading your API. The model itself consists of 4 levels, which scores on the Swamp of POX, Resources, HTTP Verbs and Hypermedia Controls usage. 
 
-If you want to know more about RESTful API's I really suggest to read the [REST Cookbook](http://restcookbook.com/). 
+If you want to know more about RESTful API development and the maturity model I really suggest to read the [REST Cookbook](http://restcookbook.com/). 
+
+## RESTful APIS in ServiceNow
+
+*OutoftheBox* ServiceNow delivers table API access, which delivers straightforward access to the various tables. In some cases you want to manipulate the data input or output, this can be done with a Scripted API.
+
+Creating a scripted REST API in ServiceNow is rather simple. The development consists of six small guided steps which help you to setup your own API in minutes.
+
+Let's start with the first step, which takes up to 2 minutes.
 
 ## Create your REST API Service 
 
