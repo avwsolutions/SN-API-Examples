@@ -5,7 +5,10 @@
 An API makes it possible too only once implement the business logic at Provider level and support lightweight consumers, such as an application or user interface. With this approach it is following the *do it once, do it right* and *don't repeat yourself* principles.
 
 REST itself stands for *REpresentational State Transfer* and it is an *architectural pattern* for creating an API that uses the HTTP as its underlying communication method. REST was first described in 2000 by [Roy Thomas Fielding](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm).
- 
+
+I really like the [Richardson Maturity Model](http://restcookbook.com/Miscellaneous/richardsonmaturitymodel/) for grading your API. The model itself consists of 4 levels, which scores on the Swamp of POX, Resources, HTTP Verbs and Hypermedia Controls usage. 
+
+If you want to know more about RESTful API's I really suggest to read the [REST Cookbook](http://restcookbook.com/). 
 
 ## Create your REST API Service 
 
