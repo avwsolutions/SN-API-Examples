@@ -124,7 +124,7 @@ As *relative path* we will choose only the resource name. in our case this will 
 Now we are ready for writing some actual code. Current example code is :
 
 -       Receiving the data attributes from the JSON formatted body.
--       Logging the requested user & action to the system logs.
+-       Logging the action and employee which triggering the API to the system logs.
 -       Create a new incident record with the provided data attributes.
 -       Save the status in a JSON formatted body and writes it back as output.
 
@@ -144,57 +144,31 @@ Now you can use multiple options to test your API. One of the easiest options is
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot">
 
+
+## Test your API
+
+Testing your API can be done using various methods. Simple validation can be done using the REST API Explorer feature. More automated testing can be done using SOAPUI or cURL started from your Jenkins pipeline.
+
+Below the examples explained.
+
+### Simple validation using the REST API Explorer feature
+
+Below a screenshot of the REST API Explorer, which is accessible by the following formatted URL *https://<instance>.service-now.com/$restapi.do*
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/rest-api-explorer.png" alt="screenshot"> 
+
+Now follow the following steps to test your change request API.
+
+1. Select your namespace (i.e. 78973) which corresponds to your just created REST API.
+2. Select you API name which corresponds to our just created service called 'srapi'.
+3. Select you API version if you released more than one version. In our case 'v1' or just 'latest'.
+4. Now type in an existing incidentnumber and press *Send*.
+
+Now the request, response and body are shown. See an example output body provided in this repository [requestincident.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
+
+
 Other options for testing your API are using Postman/SOAPui or a simple cURl statement.
 
-Now repeat the 
-
-change-part1.png
-change-part2.png
-change-part3.png
-header.png
-incident-part1.png
-incident-part2.png
-incident-part3.png
-incident-part4.png
-incidentc-part1.png
-incidentc-part2.png
-incidentc-part3.png
-poc_overview.png
-srapi-add.png
-srapi-new.png
-
-
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
-
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incidentc-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
-
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part1.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part2.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part3.png" alt="screenshot">
-<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
-
-
--	BankIT, the fictive application that is submitting the monitoring data.
--	Logfile, which stores the application server logs.
--	CollectD, which directly sends OperatingSystem metrics to the Graphite environment.
--	Logstash indexer, which transforms your input streams to their associated output.
--	Elasticsearch document store, which is the distributed system which will store all events in JSON format and has Lucene capabilities for full text searches.
--	Kibana dashboard, which gives visualization access to the elasticsearch document store.
--	Java Producer, which is the simulation worker for generating events and metrics to the eponymous topics.
--	Kafka/Zookeeper, which is a high throughput distributed message broker for real-time integration.
--	Java Consumer, which is the worker for retrieving the metrics from the topic and sending them to Graphite.
--	Graphite, which is a Python/Django/Whisper based application for storing numeric time-series data and rendering their graphs. 
--	Grafana, which is a dashboard application for displaying metric data from various sources like Graphite and Elasticsearch.
-
-*This will be a self-paced beginners’ tutorial for attendees to learn ELK, Kafka and Graphite basics as they install and develop this ITOps data lake within their Vagrantbox. Experienced Devoteam colleagues will serve as support to help attendees successfully complete this workshop.*
-
-:warning: **This document prepares you for the workshop before you actually attend. If you are already at the [DevOpsDays 2016](http://www.devopsdays.org/events/2016-amsterdam/workshops/arnold-van-wijnbergen/), please go over to the [Workshop](https://github.com/avwsolutions/DOD-AMS-Workshop/blob/master/workshop.md)**
 
 ## Pre-tutorial preparation
 At the workshop, you will need to bring your own computer. Before you go to the DevOpsDays 2016 workshop, there are some steps you should do some preparation to get your work environment ready. Here are the steps:
