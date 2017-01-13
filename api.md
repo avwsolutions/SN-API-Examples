@@ -186,3 +186,29 @@ curl "https://instance.service-now.com/api/78973/srapi/change/CHG0030002" \
 ```
 
 Now the body is shown in JSON format. See an example output body provided in this repository [requestchange.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
+
+### Advanced testing with SoapUI
+
+If you are working with multiple colleagues on the same project or you want to combine it with all your other tests you can use SoapUI. This example just gives an idea of SoapUI usage in the scope of testing a ServiceNow REST API.
+
+In this SoapUI Example we will test the incident create API by following the steps below.
+
+1. Open SoapUI.
+2. Open or create a new REST Project.
+3. Now add your first resource. In our case *https://instance.service-now.com* /api/78973/srapi/incident.
+4. After the resource is created you can add the first POST method.
+5. As additional add a mediatype application/json body with the following defined:
+
+```
+{
+	"category": "software",
+	"shortdescription": "Hello GitHub this is my first troubleticket",
+	"employee": "Abel Tuter"
+}
+```
+6. Now you can easily submit the request.
+
+Now a lot of information is shown like the response time, reponse and other details. See an example SoapUI configuration below:
+
+<img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/soapui-example.png" alt="screenshot">
+
