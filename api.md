@@ -29,7 +29,7 @@ In this example we will create three simple scripted Rest API resources commonly
 
 ## Create your REST API Service 
 
-In ServiceNow you wil start with creating the REST API Service. Simple use the Application Navigator to filter for 'scripted REST' and start clicking on the **New** button.
+In ServiceNow you wil start with creating the REST API Service. Simple use the Application Navigator to filter for '*Scripted REST*§' and start clicking on the **New** button.
 
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/srapi-new.png" alt="screenshot"> 
 
