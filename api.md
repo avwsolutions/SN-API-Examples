@@ -16,7 +16,7 @@ If you want to know more about RESTful API development and the maturity model I 
 
 Creating a scripted REST API in ServiceNow is rather simple. The development consists of six small guided steps which help you to setup your own API in minutes.
 
-Let's start it only takes up to 10 minutes.
+Let's start, it only takes up to 10 minutes.
 
 # Hands-on Example
 
