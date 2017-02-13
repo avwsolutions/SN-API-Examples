@@ -11,6 +11,7 @@
 	-  [2.2.1 Incident Request API](#incident)
 	-  [2.2.2 Change Request API](#change)
 	-  [2.2.3 Incident creation API](#incidentc)
+	-  [2.2.4 CI Request API](#configitem)
     -   [2.3 Test your API](#apitest)
 	-  [2.3.1 Simple validation using the REST API Explorer feature](#explorer)
 	-  [2.3.2 Testing your REST API using cURL](#curl)
@@ -163,6 +164,11 @@ After you saved your awesome code you enter the last configuration step around s
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part4.png" alt="screenshot">
 
 In this example we only enable *Require Authentication*.
+
+<a id="configitem"></a>
+### CI request API
+
+Now use the previous samples above to create the *CI Request* resource.Use the example code provided in this repository [requestci](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI).
 
 <a id="apitest"></a>
 ## Test your API
