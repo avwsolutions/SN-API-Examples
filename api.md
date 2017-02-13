@@ -1,5 +1,27 @@
 # Create ServiceNow API in 10 minutes 
 
+## Table of Contents
+
+-   [1.0 Small introduction in API concepts](#intro)
+    -   [1.1 Introduction in RESTful APIS](#intrest)
+-   [2.0 BankIT Scenario : part1 ](#bankit1)
+    -   [2.1 Your first Logstash configuration](#basics)
+    -   [2.2 Connecting the Syslog](#syslog)
+    -   [2.3 Our middleware logs](#logfile)
+    -   [2.4 Application logging & performance](#logperf)
+    -   [2.5 Our first Kibana dashboard](#fkibana)
+-   [3.0 BankIT Scenario : part2 ](#bankit2)
+    - [3.1 Install & configure Collectd](#collectd)
+    - [3.2 Application performance metrics to Graphite](#grapmet)
+    - [3.3 Our first Grafana dashboard](#grafana)
+-   [4.0 BankIT Scenario : part3 ](#bankit3)
+    - [4.1 Install & configure Kafka](#kafka)
+    - [4.2 Create your Kafka Logstash configuration](#logkaf)
+    - [4.3 Direct application logging through Java workers] (#directlog)
+
+<a id="intro"></a>
+# Small introduction in API concepts
+<a id="intrest"></a>
 ## Introduction in RESTful APIS
 
 An API makes it possible too only once implement the business logic at Provider level and support lightweight consumers, such as an application or user interface. With this approach it is following the *do it once, do it right* and *don't repeat yourself* principles.
