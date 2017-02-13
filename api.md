@@ -4,20 +4,17 @@
 
 -   [1.0 Small introduction in API concepts](#intro)
     -   [1.1 Introduction in RESTful APIS](#intrest)
--   [2.0 BankIT Scenario : part1 ](#bankit1)
-    -   [2.1 Your first Logstash configuration](#basics)
-    -   [2.2 Connecting the Syslog](#syslog)
-    -   [2.3 Our middleware logs](#logfile)
-    -   [2.4 Application logging & performance](#logperf)
-    -   [2.5 Our first Kibana dashboard](#fkibana)
--   [3.0 BankIT Scenario : part2 ](#bankit2)
-    - [3.1 Install & configure Collectd](#collectd)
-    - [3.2 Application performance metrics to Graphite](#grapmet)
-    - [3.3 Our first Grafana dashboard](#grafana)
--   [4.0 BankIT Scenario : part3 ](#bankit3)
-    - [4.1 Install & configure Kafka](#kafka)
-    - [4.2 Create your Kafka Logstash configuration](#logkaf)
-    - [4.3 Direct application logging through Java workers] (#directlog)
+    -	[1.2 RESTful APIS in ServiceNow](#restnow)
+-   [2.0 Hands-on Example](#hexample)
+    -   [2.1 Create your REST API Service](#service)
+    -   [2.2 Create our Service Resources](#resources)
+	-  [2.2.1 Incident Request API](#incident)
+	-  [2.2.2 Change Request API](#change)
+	-  [2.2.3 Incident creation API](#incidentc)
+    -   [2.3 Test your API](#apitest)
+	-  [2.3.1 Simple validation using the REST API Explorer feature](#explorer)
+	-  [2.3.2 Testing your REST API using cURL](#curl)
+	-  [2.3.3 Advanced testing with SoapUI](#soapui)
 
 <a id="intro"></a>
 # Small introduction in API concepts
@@ -32,6 +29,7 @@ I really like the [Richardson Maturity Model](http://restcookbook.com/Miscellane
 
 If you want to know more about RESTful API development and the maturity model I really suggest to read the [REST Cookbook](http://restcookbook.com/). 
 
+<a id="restnow"></a>
 ## RESTful APIS in ServiceNow
 
 *OutoftheBox* ServiceNow delivers table API access, which delivers straightforward access to the various tables. In some cases you want to manipulate the data input or output, this can be done with a Scripted API.
@@ -40,6 +38,7 @@ Creating a scripted REST API in ServiceNow is rather simple. The development con
 
 Let's start, it only takes up to 10 minutes.
 
+<a id="hexample"></a>
 # Hands-on Example
 
 In this example we will create three simple scripted Rest API resources commonly used by IT Operations Management implementations, regarding:
@@ -49,6 +48,7 @@ In this example we will create three simple scripted Rest API resources commonly
 -	GET incident informatoin by incidentnumber.
 -	POST incident from event handler or monitoring alert system.
 
+<a id="service"></a>
 ## Create your REST API Service 
 
 In ServiceNow you wil start with creating the REST API Service. Simple use the Application Navigator to filter for '*Scripted REST*§' and start clicking on the **New** button.
@@ -63,10 +63,12 @@ In our case we will create the a service with the *Name* value of **srapi**, whi
 
 :warning: Use a short, lowercase and functional name for identifying that service and a solid foundation for grouping your later creating resources.
 
+<a id="resources"></a>
 ## Create our Service Resources
 
 Now that we have a service created we can implement the actual resources that provide the functionality. Resources are mainly containing the configuration around
 
+<a id="incident"></a>
 ### Incident request API
 First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/incident-part1.png" alt="screenshot">
@@ -99,6 +101,7 @@ In this example we only enable *Require Authentication*.
 
 Now we can repeat the above step for the Change request and Incident creation.
 
+<a id="change"></a>
 ### Change request API
 First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
 <img src="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/Content/change-part1.png" alt="screenshot">
@@ -129,6 +132,7 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
+<a id="incidentc"></a>
 ### Incident creation API
 
 First step is to open the *New resource* window. This can be done opening the service window and clicking on *New* on the *Resources* tab.
@@ -160,12 +164,14 @@ After you saved your awesome code you enter the last configuration step around s
 
 In this example we only enable *Require Authentication*.
 
+<a id="apitest"></a>
 ## Test your API
 
 Testing your API can be done using various methods. Simple validation can be done using the REST API Explorer feature. More automated testing can be done using SOAPUI or cURL started from your Jenkins pipeline.
 
 Below the examples explained.
 
+<a id="explorer"></a>
 ### Simple validation using the REST API Explorer feature
 
 Below a screenshot of the REST API Explorer, which is accessible by the following formatted URL 
@@ -185,13 +191,7 @@ Now the request, response and body are shown. See an example output body provide
 
 <object width="300" height="300" type="text/html" data="https://raw.githubusercontent.com/avwsolutions/SN-API-Examples/master/SRAPI/requestincident.example-output" border="1" > </object>
 
-### Testing your REST API using Postman
-
-One of the tools which also can be used SoapUI.
- 
-
-
-
+<a id="curl"></a>
 ### Testing your REST API using cURL
 
 If you already noticed the API explorer window they also provide example CLI snippits for most popular tools or scripting languages.
@@ -209,6 +209,7 @@ curl "https://instance.service-now.com/api/78973/srapi/change/CHG0030002" \
 
 Now the body is shown in JSON format. See an example output body provided in this repository [requestchange.example-output](https://github.com/avwsolutions/SN-API-Examples/tree/master/SRAPI)
 
+<a id="soapui"></a>
 ### Advanced testing with SoapUI
 
 If you are working with multiple colleagues on the same project or you want to combine it with all your other tests you can use SoapUI. This example just gives an idea of SoapUI usage in the scope of testing a ServiceNow REST API.
