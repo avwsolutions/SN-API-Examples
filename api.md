@@ -35,7 +35,7 @@ If you want to know more about RESTful API development and the maturity model I 
 
 *OutoftheBox* ServiceNow delivers table API access, which delivers straightforward access to the various tables. In some cases you want to manipulate the data input or output, this can be done with a Scripted API.
 
-Creating a scripted REST API in ServiceNow is rather simple. The development consists of six small guided steps which help you to setup your own API in minutes.
+Creating a scripted REST API in ServiceNow is rather simple. The development consists of six small guided steps which help you to setup your own API in minutes. Find some more interesting information about this cool functionality at [docs.servicenow.com](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/integrate/inbound-rest/concept/c_RESTAPI.html)
 
 Let's start, it only takes up to 10 minutes.
 
