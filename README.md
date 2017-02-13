@@ -40,4 +40,4 @@ Before starting this tutorial you need the following software installed or avail
 
 :warning: *Most parts you need additional Automation or Monitoring software implemented, this part contains that additional preparation.*
  
-# **And now you are ready to start with the tutorial !!!**
+# **And now you are ready to start with the tutorial !!!, :warning: go over to the [API Tutorial](https://github.com/avwsolutions/SN-API-Examples/blob/master/api.md)**
