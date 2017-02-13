@@ -1,4 +1,4 @@
-# Create ServiceNow API in 10 minutes 
+# Create a ServiceNow API in 10 minutes 
 
 ## Table of Contents
 
